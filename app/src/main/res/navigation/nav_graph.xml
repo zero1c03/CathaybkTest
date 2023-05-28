@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/AttractionsFragment">
+
+    <fragment
+        android:id="@+id/AttractionsFragment"
+        android:name="com.weber.cathaybktest.fragment.attractions.AttractionsFragment"
+        android:label="@string/attractions_fragment_label"
+        tools:layout="@layout/fragment_attractions">
+
+        <action
+            android:id="@+id/start_AttractionDetailFragment"
+            app:destination="@id/AttractionDetailFragment"
+            app:enterAnim="@animator/slide_in_right"
+            app:exitAnim="@animator/slide_out_left"
+            app:popEnterAnim="@animator/slide_in_right"
+            app:popExitAnim="@animator/slide_out_left"
+            app:popUpTo="@id/AttractionsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AttractionDetailFragment"
+        android:name="com.weber.cathaybktest.fragment.detail.AttractionDetailFragment"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/start_AttractionDetailWebView"
+            app:destination="@id/attractionDetailWebView"
+            app:enterAnim="@animator/slide_in_right"
+            app:exitAnim="@animator/slide_out_left"
+            app:popEnterAnim="@animator/slide_in_right"
+            app:popExitAnim="@animator/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/attractionDetailWebView"
+        android:name="com.weber.cathaybktest.fragment.detail.AttractionDetailWebView"
+        android:label="AttractionDetailWebView"
+        tools:layout="@layout/web_detail" />
+</navigation>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">CathaybkTest</string>
+    <string name="action_language">Language</string>
+    <string name="attractions_fragment_label">TaipeiTour</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="retry">Retry</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="zh_tw">正體中文</string>
+    <string name="zh_cn">简体中文</string>
+    <string name="en">English</string>
+    <string name="ja">日本語</string>
+    <string name="ko">한국어</string>
+    <string name="es">español</string>
+    <string name="id">bahasa Indonesia</string>
+    <string name="th">อักษรไทย</string>
+    <string name="vi">Tiếng Việt</string>
+
+    <string name="webview_error">WebView Error</string>
+    <string name="webview_ssl_error">Unable to verify server SSL certificate. Do you want to continue?"</string>
+    <string name="webview_activity_not_found_error">No Activity found to handle Intent"</string>
+    <string name="no_data">No Data Found. Check Your Network."</string>
+
+
+</resources>
